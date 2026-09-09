@@ -1,0 +1,42 @@
+# Tests
+
+## Test 1 - Select a voice and preview a creator script [sanity]
+Viewport: desktop
+Covers: voice library selection, male/female voice identity cards, script editor, browser voice preview
+Description: Verifies the primary studio workflow lets a creator choose a distinct voice, edit a script, and start an audible preview.
+Steps:
+1. Open the Studio
+2. Select the voice named "Milo"
+3. Replace the script with "This is my test narration."
+4. Click "Preview voice"
+Expected: Milo is visibly selected, the edited script remains in the editor, and the browser speech preview starts.
+
+## Test 2 - Filter the voice library by gender
+Viewport: desktop
+Covers: Male/Female category filters, voice catalog rendering
+Description: Verifies the voice library separates identities into Male and Female categories.
+Steps:
+1. Click "Female"
+2. Inspect the voice list
+3. Click "Male"
+4. Inspect the voice list
+Expected: Female shows only female identities, and Male shows only male identities.
+
+## Test 3 - Change delivery and use the sample script on mobile
+Viewport: mobile
+Covers: delivery controls, sample-script action, responsive studio layout
+Description: Verifies the creator workbench remains usable on mobile while changing delivery and loading a sample.
+Steps:
+1. Select "Cinematic"
+2. Tap "Try a sample"
+3. Tap "Preview voice"
+Expected: Cinematic is visibly selected, the sample script appears in the editor, and the preview control remains usable on the mobile layout.
+
+## Test 4 - Keep API positioning visible without exposing credentials
+Viewport: desktop
+Covers: developer API product positioning, app/API architecture messaging
+Description: Verifies the product communicates that the creator studio and developer API are powered by the same planned core voice engine, without displaying any API secret or credential.
+Steps:
+1. Scroll to the "Built for builders" section
+2. Inspect the architecture messaging
+Expected: The page visibly explains that one voice engine is intended to power both the creator app and developer API, without displaying any API secret or credential.
